@@ -13,10 +13,13 @@ repositories {
 }
 
 dependencies {
+    implementation("junit:junit:4.13.1")
+    testImplementation(kotlin("test"))
     testImplementation(kotlin("test"))
 }
 
 tasks.test {
+    useJUnitPlatform()
     useJUnitPlatform()
 }
 
